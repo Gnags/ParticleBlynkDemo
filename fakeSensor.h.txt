@@ -1,0 +1,29 @@
+
+#ifndef FAKESENSOR_H
+#define FAKESENSOR_H
+
+#include "myBlynkLib.h"
+// #include "blynk/BlynkParticle.h"
+// #include "widgets_alt.h"
+
+
+
+class fakeSensorClass {
+    
+    public:
+        
+        BlynkParticleClass *gui;
+        
+        uint32_t millisCounter;
+        
+        
+        fakeSensorClass(BlynkParticleClass *_guiStuff);
+        
+        
+        
+        void checkSensor();
+        
+        
+};
+
+#endif
